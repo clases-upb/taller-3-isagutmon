@@ -130,16 +130,17 @@ public class App {
       try {
          // Inicializar las variables 
          String Tipo_de_Caracter ="";
+         final String letra = "ES LETRA", numero = "ES NUMERO", especial = "ESPECIAL";
          /* Realizar un if si es alfabetico un else if si es numerico y un else si es especial
          Para esto utilizaremos Character.isLetter() y Character.isDigit()*/ 
          if (Character.isLetter(caracter)){
-            Tipo_de_Caracter = "ES LETRA";
+            Tipo_de_Caracter = letra;
             }
          else if (Character.isDigit(caracter)){
-            Tipo_de_Caracter = "ES NUMERO";
+            Tipo_de_Caracter = numero;
          }
          else{
-            Tipo_de_Caracter = "ESPECIAL";
+            Tipo_de_Caracter = especial;
          }
       return  Tipo_de_Caracter;
       } 
