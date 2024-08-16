@@ -128,9 +128,10 @@ public class App {
     // Construir la funcion Clasificar_char que reciba un char y devuelva un string 
     public static String Clasificar_char (char caracter){
       try {
-         // Inicializar las variables 
+         // Inicializar las variables y declaramos las constantes
          String Tipo_de_Caracter ="";
          final String letra = "ES LETRA", numero = "ES NUMERO", especial = "ESPECIAL";
+         
          /* Realizar un if si es alfabetico un else if si es numerico y un else si es especial
          Para esto utilizaremos Character.isLetter() y Character.isDigit()*/ 
          if (Character.isLetter(caracter)){
@@ -144,6 +145,7 @@ public class App {
          }
       return  Tipo_de_Caracter;
       } 
+         
       // En caso de que haya un error inesperado,  "Ocurrió un error inesperado".
       catch (Exception e) {
          return "Ocurrió un error inesperado";
@@ -242,7 +244,7 @@ public class App {
                           case 2:
                               habitaciones_disponibles = "101|301";
                               break;
-                          // Si es AA y numero_camas = 3 devuelve 301 
+                          // Si es AA y numero_camas = 3 devuelve 201 
                           case 3:
                               habitaciones_disponibles = "201";
                               break;
@@ -251,11 +253,11 @@ public class App {
   
                   case "VE":
                       switch (numero_camas) {
-                          // Si es VE y numero_camas = 2 
+                          // Si es VE y numero_camas = 1 
                           case 1:
                               habitaciones_disponibles = "102";
                               break;
-                          // Si es VE y numero_camas = 3  
+                          // Si es VE y numero_camas = 2  
                           case 2:
                               habitaciones_disponibles = "202";
                               break;
@@ -350,6 +352,7 @@ public class App {
          final String invitacionverde = "Invita a las cervezas", invitacionazul = "Invita a la pizza",
          invitacionrojo = "Invita al postre", invitacion_amarillo = "Paga el parqueadero de todos",
          invitacion_blanco_negro = "Vaya y disfrute";
+         
          //Realizamos un switch para comparar la variable color con cada una de las opciones 
          switch (color_bola){
             case "verde" :
@@ -375,7 +378,7 @@ public class App {
             }
          return invitacion;
       } 
-
+      //En caso de un error inesperado
       catch (Exception e) {
          return "Ocurrió un error inesperado";
          }
