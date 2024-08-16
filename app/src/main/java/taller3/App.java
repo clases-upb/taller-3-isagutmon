@@ -149,12 +149,7 @@ public class App {
       }
     }
     
-    
-    
-
-
-
-   /*
+    /*
     * 
     * 4. Construya un algoritmo e implemente la función en Java
     * Hallar_division_exacta que pida dos números enteros,
