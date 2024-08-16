@@ -354,26 +354,28 @@ public class App {
       try {
          //Declaramos las variables 
          String invitacion = ""; 
-         
+         final String invitacionverde = "Invita a las cervezas", invitacionazul = "Invita a la pizza",
+         invitacionrojo = "Invita al postre", invitacion_amarillo = "Paga el parqueadero de todos",
+         invitacion_blanco_negro = "Vaya y disfrute";
          //Realizamos un switch para comparar la variable color con cada una de las opciones 
          switch (color_bola){
             case "verde" :
-               invitacion =  "Invita a las cervezas";
+               invitacion =  invitacionverde;
                break;
             case "azul" :
-               invitacion = "Invita a la pizza";
+               invitacion = invitacionazul;
                break;
             case "rojo" :
-               invitacion = "Invita al postre";
+               invitacion = invitacionrojo;
                break;
             case "amarillo" :
-               invitacion = "Paga el parqueadero de todos";
+               invitacion = invitacion_amarillo;
                break;
             case "blanco" :
-               invitacion = "Vaya y disfrute";
+               invitacion = invitacion_blanco_negro;
                break;   
             case "negro":
-               invitacion ="Vaya y disfrute";
+               invitacion = invitacion_blanco_negro;
                break;
             default:
                return "Error en el color";
