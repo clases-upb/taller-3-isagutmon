@@ -64,6 +64,7 @@ public class App {
                 num_menor = num_1;
             }
         }
+      orden = num_mayor+ " - " +num_medio+ " - "+num_menor;
       return orden;
          
       }
@@ -72,13 +73,6 @@ public class App {
          return "Error: La función no considera números iguales";
       }
    }
-    
-   
-   
-   //Evaluamos numero_mayor - numero_medio - numero_menor 
-   //Retornamos Orden
-
-
    /*
     * 2. Construya un algoritmo e implemente la función en Java Obtener_cifras que
     * recibe un número entre 0 y 50.000
