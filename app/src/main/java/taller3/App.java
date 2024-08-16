@@ -171,6 +171,7 @@ public class App {
       try {
          //Declaramos variables y constantes
          String resultado = "";
+         final String division_exacta = "DIVISION EXACTA", division_no_exacta = "DIVISION NO EXACTA";
 
          //Validamos que ambos numeros sean mayores que 0 
          if (num_1<=0 || num_2<=0){
@@ -179,12 +180,12 @@ public class App {
          
          //Retornamos División exacta cuando no hay residuo
          else if (num_1%num_2 == 0){
-            resultado = "DIVISION EXACTA";
+            resultado = division_exacta;
             }
 
          //Retornamos división no exacta cuando hay residuo en la división 
          else if (num_1%num_2 != 0){
-            resultado = "DIVISION NO EXACTA";
+            resultado = division_no_exacta;
             } 
          //Retornamos el resultado 
          return  resultado;
@@ -293,6 +294,7 @@ public class App {
          //Inicializamos las variables y declaramos las constantes
          String Obsequio = "";
          final String obsequioplato_1="POSTRE", obsequioplato_1_2 ="BEBIDA", obsequioplato_1_2_3 = "BEBIDA Y POSTRE";
+         
          //Con ayuda del condicional if, hacemos los respectivos escenarios para lo que escoja el cliente 
          //En el escenario 1 el cliente solicita el plato 1 y le dan postre
          if (plato_1==true && plato_2==false && plato_3==false){
