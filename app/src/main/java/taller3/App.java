@@ -301,20 +301,21 @@ public class App {
     //Creamos la funcion que devuelva string y reciba 3 boolean 
    public static String Obtener_obs (boolean plato_1, boolean plato_2, boolean plato_3){
       try {
-         //Inicializamos las variables
+         //Inicializamos las variables y declaramos las constantes
          String Obsequio = "";
+         final String obsequioplato_1="POSTRE", obsequioplato_1_2 ="BEBIDA", obsequioplato_1_2_3 = "BEBIDA Y POSTRE";
          //Con ayuda del condicional if, hacemos los respectivos escenarios para lo que escoja el cliente 
          //En el escenario 1 el cliente solicita el plato 1 y le dan postre
          if (plato_1==true && plato_2==false && plato_3==false){
-            Obsequio = "POSTRE";
+            Obsequio = obsequioplato_1;
             }
          //En el escenario 2 el cliente selecciona el 1 y 2 y le dan bebida
          else if (plato_1==true && plato_2==true && plato_3==false){
-            Obsequio = "BEBIDA";
+            Obsequio = obsequioplato_1_2;
             }
           //El cliente seleccion el plato 1 y 2 y 3 y le dan postre y bebida 
          else if (plato_1==true && plato_2==true && plato_3==true){
-            Obsequio = "BEBIDA Y POSTRE";
+            Obsequio = obsequioplato_1_2_3;
             }
          //Sino (los 3 son falsos) se devuelve plato no válido 
          else if (plato_1==false && plato_2==false && plato_3==false){
